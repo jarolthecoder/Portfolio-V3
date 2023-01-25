@@ -1,0 +1,163 @@
+#hero {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	min-height: 100vh;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.hero-content {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-direction: column;
+	z-index: 2;
+}
+
+.title {
+	flex-direction: column;
+}
+
+.title span:nth-child(2)::after {
+	content: '.';
+	color: var(--clr-lime);
+}
+
+.subtitle {
+	width: 100%;
+	color: var(--clr-lime);
+	text-transform: uppercase;
+}
+
+.lead {
+	width: 70%;
+	margin-bottom: 1rem;
+	color: var(--clr-light-grey);
+}
+
+
+/* Background */
+#hero .hero-bg-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+#hero .bg-img {
+  width: 100%;
+  height: 100%;
+}
+
+.bg-img-float {
+	animation: float 4s ease-in-out 0.5s infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.gradient-layer {
+	position: absolute;
+	top: 0;
+  left: 0;
+	width: 100%;
+  height: 100%;
+	background: linear-gradient(#0a060f22, #110b19);
+}
+
+/* Scroll Button */
+.scroll-down {
+	position: absolute;
+	bottom: 10%;
+	left: 50%;
+	transform: translateX(-50%);
+	width : 100%;
+	height: 55px;
+	text-align: center;
+	opacity: 0;
+	transition: opacity ease 1s 1.02s;
+}
+
+.scroll-fade-in {
+	opacity: 1;
+}
+
+.mouse {
+	width: 3px;
+	height: 35px;
+	padding: 10px 15px;
+	margin: auto;
+	border: 2px solid var(--clr-white);
+	border-radius: 25px;
+	opacity: 0.75;
+	box-sizing: content-box;
+}
+
+.scroller {
+	width: 3px;
+	height: 10px;
+	border-radius: 25%;
+	background-color: var(--clr-lime);
+	animation-name: scroll;
+	animation-duration: 2.2s;
+	animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+	animation-iteration-count: infinite;
+}
+
+.scroll-text {
+	animation-name: scroll;
+	animation-duration: 2.2s;
+	animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+	animation-iteration-count: infinite;
+}
+
+@keyframes scroll {
+  0% { opacity: 0; }
+  10% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(15px); opacity: 0;}
+}
+
+.mouse,
+.scroller,
+.scroll-text {
+	cursor: pointer;
+}
+
+
+@media screen and (max-width: 800px) {
+	#hero  {
+		min-height: 88vh;
+		overflow: hidden;
+	}
+
+	.hero-content,
+ 	.subtitle {
+		text-align: center;
+		justify-content: center;
+	}
+	
+	#hero .bg-img {
+		width: auto;
+		height: auto;
+		margin-left: -25%;
+	}
+
+	.lead {
+		width: 100%;
+	}
+}
+
+@media screen and (orientation: landscape) and (max-width: 800px) {
+  #hero  {
+		min-height: 200vh;
+	}
+}

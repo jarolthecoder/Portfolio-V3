@@ -1,0 +1,40 @@
+.scroll-top-hidden {
+  visibility: hidden;
+  opacity: 0;
+  bottom: -100%;
+  right: -100%;
+  transition: all ease 0.5s;
+}
+
+.scroll-top {
+  visibility: visible;
+  opacity: 1;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  transition: all ease 0.5s;
+}
+
+.scroll-top .scroll-top-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem 1rem 2rem;
+  border-radius: 100px 0px 0px;
+  font-size: var(--fs-medium);
+  color: var(--clr-white);
+  background: var(--clr-light-purple);
+  transition: background ease 0.2s;
+}
+
+.scroll-top .scroll-top-btn:hover {
+  background: #9349f4;
+}
+
+@media screen and (max-width: 800px) {
+  .scroll-top .scroll-top-btn {
+    font-size: 5.5vw;
+    padding: 2.2rem 1.5rem 1.5rem 2.2rem;
+  }
+}

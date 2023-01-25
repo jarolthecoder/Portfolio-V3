@@ -1,0 +1,123 @@
+#contact {
+  padding: 5rem 0 0;
+  height: 100%;
+  min-height: 70vh;
+  background: linear-gradient(#110b19, #08070e);
+  position: relative;
+  overflow: hidden;
+}
+
+#contact .width-wrapper {
+  position: relative;
+  z-index: 1;
+  align-items: center;
+  gap: 5rem;
+}
+
+#contact h2.flex-control {
+  flex-direction: column;
+}
+
+#contact h2 span:nth-child(2)::after {
+	content: '.';
+	color: var(--clr-lime);
+}
+
+#contact .lead {
+  width: 100%;
+}
+
+#contact .email-wrapper {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  color: var(--clr-white);
+  cursor: pointer;
+}
+
+.email-icon {
+  padding: 1rem 1.5rem;
+
+}
+
+.hello-img {
+  width: 50%;
+  margin: auto;
+  animation: wave-animation 2.5s infinite;
+  transform-origin: 70% 70%;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg)}
+   10% { transform: rotate(14.0deg) }  
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) } 
+  100% { transform: rotate( 0.0deg) }
+}
+
+#contact .email-link {
+  position: relative;
+  padding: 1rem 1.5rem;
+  border: 1px solid var(--clr-num);
+  border-radius: 0.2rem;
+  font-size: var(--fs-medium);
+  text-align: center;
+}
+
+#contact .email-link:hover {
+  background: var(--clr-light-purple);
+  border-color: #110b19;
+  transition: background ease 0.3s
+}
+
+/* Background */
+#contact .bg-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#contact .bg-img {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+	animation: dotFloat 3s ease-in-out 1s infinite;
+}
+
+@keyframes dotFloat {
+  0% { transform: translateY(0) translateX(0); }
+  50% { transform: translateY(-40px) translateX(-20px); }
+  100% { transform: translateY(0)  translateX(0); }
+}
+
+#contact .gradient-layer {
+	position: absolute;
+	top: 0;
+  left: 0;
+	width: 100%;
+  height: 100%;
+	background: linear-gradient(#110b199e, #08070e);
+}
+
+@media screen and (max-width: 800px) {
+  #contact {
+    height: 100%;
+    min-height: auto;
+    padding: 5rem 0 0 0;
+  }
+
+  #contact .width-wrapper {
+    gap: 3rem;
+  }
+
+  #contact .bg-img {
+    width: 125%;
+  }
+
+}

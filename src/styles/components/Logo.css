@@ -1,0 +1,22 @@
+.logo-container {
+	width: 150px;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 0.5rem;
+	font-family: var(--ff-heading);
+	font-weight: var(--fw-bold);
+	position: relative;
+}
+
+.logo-img {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+}
+
+@media screen and (max-width: 800px) {
+	.logo-container {
+		width: 115px;
+	}
+}

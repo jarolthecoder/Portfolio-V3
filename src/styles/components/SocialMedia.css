@@ -1,0 +1,26 @@
+.social-media-wrapper {
+	justify-content: center;
+	gap: 1.5rem;
+	padding: 2rem 0;
+}
+
+.social-media-link {
+  font-size: var(--fs-medium);
+	cursor: pointer;
+}
+
+.social-media-link:hover {
+	color: var(--clr-lime);
+	transition: color ease 0.3s;
+}
+
+
+@media screen and (max-width: 800px) {
+	.social-media-wrapper.flex-control {
+		flex-direction: row;
+	}
+
+	.social-media-link {
+  	font-size: var(--fs-large);
+	}
+}
