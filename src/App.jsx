@@ -31,7 +31,6 @@ const App = ()=> {
   const handleVisibleButton = () => {
     const position = window.pageYOffset;
     setScrollPosition(position);
-
     if (position > 1000) {
       setshowScrollTopBtn("scroll-top");
     } else if(position < 1000) {
@@ -42,7 +41,6 @@ const App = ()=> {
   const handleScrollUp = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
-
 
   useEffect(() => {
     AOS.init({
@@ -64,9 +62,7 @@ const App = ()=> {
         <Contact />
       </main>
       <Footer />
-      <ScrollTopBtn 
-        showScrollTopBtn={ showScrollTopBtn } 
-        scrollUp={ handleScrollUp }/>
+      <ScrollTopBtn showScrollTopBtn={ showScrollTopBtn } scrollUp={ handleScrollUp }/>
     </>
   )
 }

@@ -6,7 +6,6 @@
 	--clr-dark-purple: #150E1F;
 	--clr-purple: #2B254D;
 	--clr-light-purple: #7637ca;
-	--clr-cta-background: #6D59A8;
 	--clr-pink: #F755A5;
 	--clr-dark-pink: #aa3c73;
 	--clr-num: #ba64dc;
@@ -62,7 +61,6 @@ img {
 }
 
 /* Font styles */
-
 body {
 	letter-spacing: 2px;
 }
@@ -157,7 +155,7 @@ a {
 
 ::-webkit-scrollbar-thumb {
   border-radius: 2rem;
-	 background: #75c272;
+	background: #75c272;
 	transition: background ease 0.3s;
 }
 
