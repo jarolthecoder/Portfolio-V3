@@ -44,7 +44,7 @@ const ProjectsList = () => {
               </a>
               <a 
                 className="project-link" 
-                href="https://dazzling-piroshki-f56cb2.netlify.app/"
+                href="https://koffeeshop.netlify.app/"
                 target="_blank">
                 View Project { arrowLink }
               </a>
@@ -79,7 +79,7 @@ const ProjectsList = () => {
               </a>
               <a 
                 className="project-link" 
-                href="https://phenomenal-kulfi-f493f3.netlify.app/"
+                href="https://myistream.netlify.app/"
                 target="_blank">
                 View Project { arrowLink }
               </a>
