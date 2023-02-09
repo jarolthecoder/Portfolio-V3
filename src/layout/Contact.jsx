@@ -2,6 +2,7 @@ import '../styles/layout/Contact.css'
 import dotsBg from '../assets/dots-bg.svg'
 import helloImg from '../assets/hand-hello.svg'
 import SocialMedia from '../components/SocialMedia';
+import Button from '../components/Button';
 import AOSElement from '../components/AOSElement';
 
 
@@ -33,9 +34,11 @@ const Contact = () => {
               </div>
             </AOSElement>
             <AOSElement duration="900">
-              <div className="email-link">
-                <a href="mailto:jarolr.webdev@gmail.com">jarolr.webdev@gmail.com</a>
-              </div>
+              <Button 
+                customClass="email-link"
+                link="mailto:jarolr.webdev@gmail.com"
+                text="jarolr.webdev@gmail.com"
+              />
             </AOSElement>
           </div>
           <AOSElement duration="900">

@@ -61,11 +61,13 @@
 
 #contact .email-link {
   position: relative;
-  padding: 1rem 1.5rem;
+  padding: 1rem;
   border: 1px solid var(--clr-num);
   border-radius: 0.2rem;
   font-size: var(--fs-medium);
   text-align: center;
+  background: none;
+  width: 100%;
 }
 
 #contact .email-link:hover {
