@@ -19,7 +19,7 @@ const ProjectsList = () => {
           return (
             <div className="project-wrapper flex-control" key={ item.name }>
               <figure className='project-img-container'>
-                <img className='project-img' src={ item.img } alt="" />
+                <img className='project-img' src={ item.img } alt="Project image" loading="lazy"/>
               </figure>
               <AOSElement duration="300">
                 <div className="project-description">

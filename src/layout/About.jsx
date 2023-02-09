@@ -73,7 +73,7 @@ const About = () => {
         <div className="col-right">
           <AOSElement duration="900">
             <figure className="profile-img-container">
-              <img src={ profileImg } alt="" className='profile-img'/>
+              <img src={ profileImg } className='profile-img' alt="Jarol Riera profile picture"/>
             </figure>
           </AOSElement>
         </div>
