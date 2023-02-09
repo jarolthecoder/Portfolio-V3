@@ -45,9 +45,11 @@ const Hero = () => {
             <AOSElement duration="900" delay="100">
               <img 
                 src={ backgroundImg } 
-                alt="" 
                 className={`bg-img ${!scrollY ? 'bg-img-float' : ''}`} 
                 style={{ transform: `translateY(${scrollY * -0.3}px)` }} 
+                width="1280"
+                height="853"
+                alt="Hero background image" 
               />
               <div className="gradient-layer"></div>
             </AOSElement>
