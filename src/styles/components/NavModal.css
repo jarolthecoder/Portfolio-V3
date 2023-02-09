@@ -35,9 +35,9 @@
 .modal-navigation {
   padding-top: 2rem;
   opacity: 0;
-  margin-top: -50px;
-  transition: opacity cubic-bezier(0.1, 0.82, 0.76, 0.965) 0.7s 0.2s,
-              margin-top cubic-bezier(0.1, 0.82, 0.76, 0.965) 0.7s 0.2s ;
+  margin-top: -125px;
+  transition: opacity cubic-bezier(0.1, 0.82, 0.76, 0.965) 0.7s 0.3s,
+              margin-top cubic-bezier(0.1, 0.82, 0.76, 0.965) 0.7s 0.3s;
 }
 
 .modal-link {
@@ -76,6 +76,7 @@
 }
 
 .modal-navigation.fade-up {
+  margin-top: 0;
   opacity: 1;
 }
 
