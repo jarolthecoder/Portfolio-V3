@@ -1,8 +1,7 @@
-import koffeeImg from '../assets/koffee-cover.webp'
-import iStreamImg from '../assets/istream-cover.webp'
-import alsaidImg from '../assets/alsaidfoundation-cover.webp'
-import alexlandscapingImg from '../assets/alexlandscapingllc-cover.webp'
-import portfolioImg from '../assets/jarolriera-portfolio-cover.webp'
+import koffeeImg from '../assets/koffee-cover-resized.webp'
+import iStreamImg from '../assets/istream-cover-resized.webp'
+import alsaidImg from '../assets/alsaidfoundation-cover-resized.webp'
+import alexlandscapingImg from '../assets/alexlandscapingllc-cover-resized.webp'
 
 const projectsData = [
     {
@@ -37,14 +36,6 @@ const projectsData = [
       repo_link: '',
       url: 'https://alexlandscapingllc.com/'
     }
-    // {
-    //   name: 'Portfolio V3',
-    //   img: portfolioImg,
-    //   description: `I wanted to provide a more dynamic and engaging experience, while showcasing my work and expertise. It's a great representation of my design and development skills.`,
-    //   technologies: 'React / Vite / AOS',
-    //   repo_link: 'https://github.com/jarolthecoder/Portfolio-V3',
-    //   url: 'https://jarolriera.com/'
-    // }
 ]
   
 export default projectsData

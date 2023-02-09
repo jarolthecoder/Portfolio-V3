@@ -23,8 +23,8 @@ const ProjectsList = () => {
                   className='project-img' 
                   src={ item.img } 
                   alt="Project image" 
-                  width="2233"
-                  height="1341"
+                  width="1050"
+                  height="643"
                   loading="lazy"/>
               </figure>
               <AOSElement duration="300">
