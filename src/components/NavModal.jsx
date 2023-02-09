@@ -39,7 +39,7 @@ const NavModal = ({ handleNavModal, setState }) => {
                   offset={0}
                   duration={800}
                   aria-label={ item.name }>
-                  <span onClick={ handleNavModal }>
+                  <span className="link" onClick={ handleNavModal }>
                     { item.name }
                   </span>
                 </Link>
@@ -49,7 +49,7 @@ const NavModal = ({ handleNavModal, setState }) => {
           }
           <li className={`modal-link ${setState ? 'fade-up' : ''}`}>
             <a href="../assets/resume-jarol-riera2023.pdf" target="_blank">
-              <span onClick={ handleNavModal }>
+              <span className="link" onClick={ handleNavModal }>
                 Resume
               </span>
             </a>

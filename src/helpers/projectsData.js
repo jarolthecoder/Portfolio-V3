@@ -31,7 +31,7 @@ const projectsData = [
     {
       name: 'Alex Landscaping LLC',
       img: alexlandscapingImg,
-      description: `I assisted Alex, a local business owner, in building a website for his landscaping company. The goal was to effectively showcase the high-quality of his work and establish a strong online presence for the business.`,
+      description: `I assisted Alex, a local business owner, in building a website for his company. The goal was to effectively showcase the high-quality of his work and establish a strong online presence for the business.`,
       technologies: 'WordPress / Elementor / CSS / JavaScript',
       repo_link: '',
       url: 'https://alexlandscapingllc.com/'

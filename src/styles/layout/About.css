@@ -58,6 +58,7 @@
 
 .profile-img {
 	position: relative;
+	border-radius: 0.2rem;
 	-webkit-filter: grayscale(30%);
   filter: grayscale(30%);
 	transition: filter ease 0.2s,

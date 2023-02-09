@@ -24,8 +24,7 @@ const ProjectsList = () => {
                   src={ item.img } 
                   alt="Project image" 
                   width="1050"
-                  height="643"
-                  loading="lazy"/>
+                  height="643"/>
               </figure>
               <AOSElement duration="300">
                 <div className="project-description">
