@@ -83,9 +83,12 @@
 		bottom: 6px;
 	}
 
+	#main-header .logo-img {
+		transition: filter ease 0.3s 0.4s;
+	}
+
 	#main-header .logo-dark .logo-img {
 		filter: invert(100%);
-		transition: filter ease 0.3s 0.1s;
 	}
 }
 
