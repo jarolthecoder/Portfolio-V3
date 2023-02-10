@@ -11,8 +11,6 @@ const NavModal = ({ handleNavModal, setState }) => {
     {name: 'contact', url: '/contact'}
   ]
 
-  const [scrollY, setScrollY] = useState(0);
-
 	useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
     window.addEventListener('scroll', handleScroll);
@@ -24,13 +22,13 @@ const NavModal = ({ handleNavModal, setState }) => {
   return (
     <div 
       id='nav-modal' 
-      className={`nav-modal flex-control ${setState ? 'is-open' : ''}`}>
+      className={`nav-modal flex-control`}>
       <div className='inner-container width-wrapper flex-control'>
-        <ul className={`modal-navigation ${setState ? 'fade-up' : ''}`}>
+        <ul className={`modal-navigation`}>
           { links.map((item, index) => {
             return (
               <li 
-                className={`modal-link ${setState ? 'fade-up' : ''}`}
+                className={`modal-link modal-item`}
                 key={ index }>
                 <Link
                   to={item.name}
@@ -47,7 +45,7 @@ const NavModal = ({ handleNavModal, setState }) => {
             )
           })
           }
-          <li className={`modal-link ${setState ? 'fade-up' : ''}`}>
+          <li className={`modal-link modal-item`}>
             <a href="../assets/resume-jarol-riera2023.pdf" target="_blank">
               <span className="link" onClick={ handleNavModal }>
                 Resume
@@ -55,7 +53,7 @@ const NavModal = ({ handleNavModal, setState }) => {
             </a>
           </li>
         </ul>
-        <div className={`social-media-container ${setState ? 'fade-up' : ''}`}>
+        <div className={`social-media-container modal-item`}>
           <SocialMedia />
           <a className="email-link" href="mailto:jarolr.webdev@gmail.com">jarolr.webdev@gmail.com</a>
         </div>

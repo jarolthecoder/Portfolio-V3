@@ -3,9 +3,12 @@
   justify-content: center;
 }
 
+.project-img-container {
+  justify-content: center;
+  align-items: center;
+}
+
 .project-img {
-  width: 100%;
-  height: 100%;
   border-radius: 0.2rem;
   transition: transform ease 0.2s;
   cursor: pointer;

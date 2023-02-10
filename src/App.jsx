@@ -10,19 +10,13 @@ import ScrollTopBtn from './components/ScrollTopBtn'
 import AOS from 'aos';
 import './styles/App.css'
 import 'aos/dist/aos.css';
+import { navModalGsap } from './helpers/GSAP-animations/navModalGsap'
 
 
 const App = ()=> {
   const [navOpen, setNavOpen] = useState(false)
+  const { handleNavModal } = navModalGsap(navOpen, setNavOpen)
 
-	const handleNavModal = () => {
-		if(!navOpen) {
-			setNavOpen(true);
-		} else {
-			setNavOpen(false);
-		}
-		
-	}
   const refScrollUp = useRef(null);
   const [scrollPosition, setScrollPosition] = useState(0);
   const [showScrollTopBtn, setshowScrollTopBtn] = useState("goTopHidden");

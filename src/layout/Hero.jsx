@@ -47,12 +47,12 @@ const Hero = () => {
                 src={ backgroundImg } 
                 className={`bg-img ${!scrollY ? 'bg-img-float' : ''}`} 
                 style={{ transform: `translateY(${scrollY * -0.3}px)` }} 
-                width="1280"
-                height="853"
+                width="100%"
+                height="100%"
                 alt="Hero background image" 
               />
-              <div className="gradient-layer"></div>
             </AOSElement>
+            <div className="gradient-layer"></div>
           </div>
 					<div 
             className={`scroll-down ${loaded ? 'scroll-fade-in' : ''}`}
