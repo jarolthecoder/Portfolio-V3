@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import SocialMedia from '../components/SocialMedia';
 import { Link, animateScroll as scroll } from "react-scroll";
 import '../styles/components/NavModal.css'
+import gsap from 'gsap';
 
 const NavModal = ({ handleNavModal, setState }) => {
 

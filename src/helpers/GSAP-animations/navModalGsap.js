@@ -15,7 +15,7 @@ export const navModalGsap = (navOpen, setNavOpen) => {
   }
   const animateOpenNav = () => {
     navTimeline
-      .to('.nav-modal', {ease: 'expo.inOut', x: 0}).reverse()
+      .to('.nav-modal', {ease: 'expo.out', x: 0}).reverse()
       .fromTo('.modal-item', {y: '-75%', opacity: 0}, {y: 0, opacity: 1, ease:'power4.out', stagger: 0.05}, '< .5').reverse()
   }
   const animateCloseNav = () => {
