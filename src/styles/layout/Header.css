@@ -84,7 +84,7 @@
 	}
 
 	#main-header .logo-img {
-		transition: filter ease 0.3s 0.4s;
+		transition: filter ease 0.3s 0.25s;
 	}
 
 	#main-header .logo-dark .logo-img {
