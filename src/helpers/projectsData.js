@@ -1,9 +1,17 @@
-import koffeeImg from '../assets/koffee-cover-resized.webp'
-import iStreamImg from '../assets/istream-cover-resized.webp'
-import alsaidImg from '../assets/alsaidfoundation-cover-resized.webp'
-import alexlandscapingImg from '../assets/alexlandscapingllc-cover-resized.webp'
+import koffeeImg from '../assets/koffee-project-cover.webp'
+import iStreamImg from '../assets/istream-project-cover.webp'
+import alsaidImg from '../assets/alsaidfoundation-project-cover.webp'
+import alexlandscapingImg from '../assets/alexlandscapingllc-project-cover.webp'
 
 const projectsData = [
+  {
+      name: 'iStream',
+      img: iStreamImg,
+      description: 'iSTREAM is an entertainment web app built to be user-friendly and intuitive. Users can search, browse and save their preferred content with ease.',
+      technologies: 'Angular / TypeScript / Mock API',
+      repo_link: 'https://github.com/jarolthecoder/Koffee-Ecommerce',
+      url: 'https://myistream.netlify.app/'
+    },
     {
       name: 'Koffee',
       img: koffeeImg,
@@ -11,14 +19,6 @@ const projectsData = [
       technologies: 'Angular / TypeScript / Node.js / Stripe API',
       repo_link: 'https://github.com/jarolthecoder/iSTREAM',
       url: 'https://koffeeshop.netlify.app/'
-    },
-    {
-      name: 'iStream',
-      img: iStreamImg,
-      description: 'iSTREAM is an entertainment web app built to be user-friendly and intuitive. Users can search, browse and save their preferred content with ease.',
-      technologies: 'Angular / TypeScript / Mock API',
-      repo_link: 'https://github.com/jarolthecoder/Koffee-Ecommerce',
-      url: 'https://myistream.netlify.app/'
     },
     {
       name: 'Alsaid Foundation',

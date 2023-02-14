@@ -29,15 +29,16 @@ const About = () => {
           <div className="text-content">
             <AOSElement duration="900">
               <p>
-                I have a strong passion for art and creating 
-                visually appealing, accessible & performant interfaces for the web.
+                My journey as a self-taught developer began in 2020 and since then, 
+                I have been assisting local business owners by creating 
+                visually appealing, accessible & performant websites for their businesses, providing them with a stronger online 
+                presence that will help the overall success of their business.
               </p>
             </AOSElement>
             <AOSElement duration="900">
-              <p>
-                My journey as a self-taught developer began in 2020, since then I've been 
-                driven by the belief that technology has the power to make a positive impact on people's 
-                lives and I find purpose in using my skills to help people achieve their goals through technology.
+              <p> 
+                I find immense satisfaction in using my abilities to help people in achieving their goals through 
+                technology.
               </p>
             </AOSElement>
             <AOSElement duration="900">

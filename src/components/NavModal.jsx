@@ -1,24 +1,14 @@
-import { useEffect, useState } from 'react';
 import SocialMedia from '../components/SocialMedia';
 import { Link, animateScroll as scroll } from "react-scroll";
 import '../styles/components/NavModal.css'
-import gsap from 'gsap';
 
-const NavModal = ({ handleNavModal, setState }) => {
+const NavModal = ({ handleNavModal }) => {
 
   const links = [
     {name: 'about', url: '/about'},
     {name: 'work', url: '/work'},
     {name: 'contact', url: '/contact'}
   ]
-
-	useEffect(() => {
-    const handleScroll = () => setScrollY(window.scrollY);
-    window.addEventListener('scroll', handleScroll);
-		
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
 
   return (
     <div 
