@@ -15,7 +15,7 @@ const projectsData = [
     {
       name: 'Koffee',
       img: koffeeImg,
-      description: 'A fully functional ecommerce site I built with Angular that allows for secure online transactions using the integrated Stripe payment gateway.',
+      description: 'A fully functional ecommerce SPA (Single Page Application) built with Angular that allows for secure online transactions using the integrated Stripe payment gateway.',
       technologies: 'Angular / TypeScript / Node.js / Stripe API',
       repo_link: 'https://github.com/jarolthecoder/iSTREAM',
       url: 'https://koffeeshop.netlify.app/'

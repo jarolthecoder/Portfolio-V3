@@ -29,7 +29,7 @@
 
 .profile-img-container {
 	width: 325px;
-	height: 310px;
+	height: 100%;
 	margin: auto auto 2rem auto;
 	position: relative;
 }

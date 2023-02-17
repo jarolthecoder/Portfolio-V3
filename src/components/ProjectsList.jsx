@@ -29,7 +29,7 @@ const ProjectsList = () => {
       scale: 1,
       transformOrigin: "center center",
       autoAlpha: 1,
-      duration: 0.5,
+      duration: 0.3,
       startAt: { scale: 0.88, autoAlpha: 0.88}
     });
   };
@@ -38,7 +38,7 @@ const ProjectsList = () => {
     <>
       {
         projectsData.map((item, index) => {
-           let imgRef = useRef();
+          let imgRef = useRef();
 
           useEffect(() => {
             handleImageAnimation(imgRef.current);

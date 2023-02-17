@@ -1,19 +1,19 @@
-.scroll-top-hidden {
-  visibility: hidden;
+.scroll-top {
+  position: fixed;
   opacity: 0;
-  bottom: -100%;
-  right: -100%;
   transition: all ease 0.5s;
+  z-index: 2;
 }
 
-.scroll-top {
-  visibility: visible;
+.scroll-top-hidden {
+  bottom: -100%;
+  right: -100%;
+}
+
+.scroll-top-visible {
   opacity: 1;
-  position: fixed;
   bottom: 0;
   right: 0;
-  z-index: 2;
-  transition: all ease 0.5s;
 }
 
 .scroll-top .scroll-top-btn {

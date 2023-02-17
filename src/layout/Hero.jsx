@@ -66,7 +66,7 @@ const Hero = () => {
               <div className="mouse">
                 <div className="scroller"></div>
               </div>
-              <p className="scroll-text">scroll down</p>
+              <p className="scroll-text">explore</p>
             </Link>
 					</div>
 				</div>

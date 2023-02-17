@@ -61,6 +61,14 @@
   background: var(--clr-light-purple);
 }
 
+marquee span {
+  padding: 0 1rem;
+  text-transform: uppercase;
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-large);
+  opacity: 0.1;
+}
+
 @media screen and (max-width: 800px) {
   #work {
     padding: 3rem 0;

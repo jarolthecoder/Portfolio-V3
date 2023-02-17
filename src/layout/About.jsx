@@ -3,6 +3,7 @@ import 'aos/dist/aos.css';
 import '../styles/layout/About.css'
 import AOSElement from '../components/AOSElement';
 
+
 const About = () => {
   const stackList1 = [
     {name: 'React.js'},
@@ -31,14 +32,15 @@ const About = () => {
               <p>
                 My journey as a self-taught developer began in 2020 and since then, 
                 I have been assisting local business owners by creating 
-                visually appealing, accessible & performant websites for their businesses, providing them with a stronger online 
-                presence that will help the overall success of their business.
+                visually appealing, accessible & performant websites for their businesses, 
+                providing them with a stronger online presence that will help the 
+                overall success of their business.
               </p>
             </AOSElement>
             <AOSElement duration="900">
               <p> 
-                I find immense satisfaction in using my abilities to help people in achieving their goals through 
-                technology.
+                I find immense satisfaction in using my abilities to help people in achieving 
+                their goals through technology.
               </p>
             </AOSElement>
             <AOSElement duration="900">

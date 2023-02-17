@@ -19,16 +19,15 @@ const App = ()=> {
 
   const refScrollUp = useRef(null);
   const [scrollPosition, setScrollPosition] = useState(0);
-  const [showScrollTopBtn, setshowScrollTopBtn] = useState("goTopHidden");
+  const [showScrollTopBtn, setshowScrollTopBtn] = useState(false);
 
-  //DISPLAY HANDLER
   const handleVisibleButton = () => {
     const position = window.pageYOffset;
     setScrollPosition(position);
-    if (position > 1000) {
-      setshowScrollTopBtn("scroll-top");
+    if (position > 1250) {
+      setshowScrollTopBtn(true);
     } else if(position < 1000) {
-      setshowScrollTopBtn("scroll-top-hidden");
+      setshowScrollTopBtn(false);
     }
   };
 
@@ -37,9 +36,7 @@ const App = ()=> {
   };
 
   useEffect(() => {
-    AOS.init({
-      once: true
-    });
+    AOS.init();
     window.addEventListener("scroll", handleVisibleButton);
   }, [])
   
@@ -56,7 +53,9 @@ const App = ()=> {
         <Contact />
       </main>
       <Footer />
-      <ScrollTopBtn showScrollTopBtn={ showScrollTopBtn } scrollUp={ handleScrollUp }/>
+      <ScrollTopBtn 
+        showScrollTopBtn={`scroll-top ${showScrollTopBtn ? 'scroll-top-visible' : 'scroll-top-hidden'}`} 
+        scrollUp={ handleScrollUp }/>
     </>
   )
 }
