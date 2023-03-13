@@ -45,7 +45,7 @@
 }
 
 #work .col-left {
-  gap: 10rem;
+  gap: 5rem;
 }
 
 .dark-btn {
@@ -81,14 +81,11 @@ marquee span {
     gap: 1.5rem;
   }
 
-  #work .col-left {
-    gap: 5rem;
-  }
-
   #work .col-right {
     position: static;
     position: static;
     padding: 0;
+    width: 100%;
   }
 
     #work .col-right p,

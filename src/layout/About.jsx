@@ -29,21 +29,24 @@ const About = () => {
           </AOSElement>
           <div className="text-content">
             <AOSElement duration="900">
-              <p>
+              <p> 
                 My journey as a self-taught developer began in 2020 and since then, 
                 I have been assisting local business owners by creating 
                 visually appealing, accessible & performant websites for their businesses, 
-                providing them with a stronger online presence that will help the 
-                overall success of their business.
+                providing them with a stronger online presence that will help their 
+                overall success. 
               </p>
             </AOSElement>
             <AOSElement duration="900">
-              <p> 
-                I find immense satisfaction in using my abilities to help people in achieving 
-                their goals through technology.
+              <p>
+                I find great joy in the journey of learning and growing, and it brings 
+                me immense satisfaction to utilize my skills and expertise in creating 
+                technology that empowers individuals to achieve their goals.
+                Knowing that my work contributes to others' success is incredibly fulfilling, 
+                and it drives me to strive for excellence.
               </p>
             </AOSElement>
-            <AOSElement duration="900">
+             <AOSElement duration="900">
               <p>
                 I'm currently open for any freelance or hire opportunities. 
                 Here is the stack of technologies I work with:

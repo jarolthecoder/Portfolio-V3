@@ -20,13 +20,16 @@
 
 .project-description {
   width: 95%;
-  margin: -90px auto auto;
+  margin: 15px auto auto;
   padding: 2rem 1.5rem;
-  background: #ffffffe4;
+  background: none;
   border-radius: 0.2rem;
+  text-align: center;
+  /* border: 2px solid var(--clr-dark-purple); */
   backdrop-filter: blur(5px);
-  box-shadow: 0 10px 15px #00000018;
+  /* box-shadow: 0 10px 15px #00000018; */
 }
+
 
 #work .technoligies {
   padding: 1rem 0;
@@ -35,11 +38,15 @@
   font-weight: var(--fw-bold);
   text-transform: uppercase;
   gap: 0.5rem;
+  text-align: center;
+  justify-content: center;
 }
 
 .project-link-container {
   padding-top: 1rem;
   gap: 2rem;
+  text-align: center;
+  justify-content: center;
 }
 
 .project-link {
@@ -58,9 +65,10 @@
   .project-description {
     position: relative;
     width: 95%;
-    margin: -50px auto auto;
-    background: #f3f2f2;
-    box-shadow: 0 15px 15px #00000018;
+    margin: 5px auto auto;
+    padding: 1rem 0;
+    /* background: #f3f2f2;
+    box-shadow: 0 15px 15px #00000018; */
     z-index: 2;
   }
 

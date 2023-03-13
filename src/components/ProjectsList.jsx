@@ -29,8 +29,8 @@ const ProjectsList = () => {
       scale: 1,
       transformOrigin: "center center",
       autoAlpha: 1,
-      duration: 0.3,
-      startAt: { scale: 0.88, autoAlpha: 0.88}
+      duration: 0.2,
+      startAt: { scale: 0.9, autoAlpha: 0.9}
     });
   };
 
