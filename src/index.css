@@ -188,7 +188,18 @@ a {
 	:root {
 		--fs-xlarge: 4rem;
 	}
+
 	.width-wrapper {
 		max-width: 90%;
+	}
+}
+
+@media screen and (min-width: 1600px) {
+	:root {
+		--fs-xlarge: 4rem;
+	}
+
+	.width-wrapper {
+		max-width: 70%;
 	}
 }
