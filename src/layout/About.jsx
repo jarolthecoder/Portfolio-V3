@@ -39,11 +39,9 @@ const About = () => {
             </AOSElement>
             <AOSElement duration="900">
               <p>
-                I find great joy in the journey of learning and growing, and it brings 
+                I find great joy in the process of learning and growing, and it brings 
                 me immense satisfaction to utilize my skills and expertise in creating 
                 technology that empowers individuals to achieve their goals.
-                Knowing that my work contributes to others' success is incredibly fulfilling, 
-                and it drives me to strive for excellence.
               </p>
             </AOSElement>
              <AOSElement duration="900">
