@@ -1,5 +1,5 @@
 
-const AOSElement = ( props ) => {
+export const AOSElement = ( props ) => {
   return (
     <div
       {...props} data-aos={props.aos || "fade-up"} 
@@ -12,4 +12,3 @@ const AOSElement = ( props ) => {
   )
 }
 
-export default AOSElement

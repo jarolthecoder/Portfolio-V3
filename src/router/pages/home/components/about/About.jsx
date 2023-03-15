@@ -1,10 +1,10 @@
-import profileImg from '../assets/Jarol-Riera-Web-Developer-Profile-Picture-min-mobile.webp';
+import { AOSElement } from '../../../../../ui';
+import profileImg from '../../../../../assets/Jarol-Riera-Web-Developer-Profile-Picture-min-mobile.webp';
 import 'aos/dist/aos.css';
-import '../styles/layout/About.css'
-import AOSElement from '../components/AOSElement';
+import './About.css'
 
 
-const About = () => {
+export const About = () => {
   const stackList1 = [
     {name: 'React.js'},
     {name: 'Angular'},
@@ -39,8 +39,7 @@ const About = () => {
             </AOSElement>
             <AOSElement duration="900">
               <p>
-                I find great joy in the process of learning and growing, and it brings 
-                me immense satisfaction to utilize my skills and expertise in creating 
+                I find immense satisfaction in utilizing my skills and expertise to create
                 technology that empowers individuals to achieve their goals.
               </p>
             </AOSElement>
@@ -85,5 +84,3 @@ const About = () => {
     </section>
   )
 }
-
-export default About

@@ -1,61 +1,35 @@
-import { useState, useEffect, useRef} from 'react'
-import Header from './layout/Header'
-import About from './layout/About'
-import Hero from './layout/Hero'
-import Projects from './layout/Projects'
-import Contact from './layout/Contact'
-import  Footer  from './layout/Footer'
-import NavModal from './components/NavModal'
-import ScrollTopBtn from './components/ScrollTopBtn'
-import AOS from 'aos';
-import './styles/App.css'
-import 'aos/dist/aos.css';
+import { useContext} from 'react'
+import { AppContext } from './context/AppContext';
+import { Header, Footer, Contact } from './ui'
 import { navModalGsap } from './helpers/GSAP-animations/navModalGsap'
+import { NavModal, ScrollTopBtn } from './ui';
+import { AppRouter } from './router/AppRouter'
+import 'aos/dist/aos.css';
+import './App.css'
 
 
-const App = ()=> {
-  const [navOpen, setNavOpen] = useState(false)
-  const { handleNavModal } = navModalGsap(navOpen, setNavOpen)
 
-  const refScrollUp = useRef(null);
-  const [scrollPosition, setScrollPosition] = useState(0);
-  const [showScrollTopBtn, setshowScrollTopBtn] = useState(false);
+export const App = () => {
 
-  const handleVisibleButton = () => {
-    const position = window.pageYOffset;
-    setScrollPosition(position);
-    if (position > 1250) {
-      setshowScrollTopBtn(true);
-    } else if(position < 1000) {
-      setshowScrollTopBtn(false);
-    }
-  };
+  const { showScrollTopBtn, refScrollUp, navOpen, setNavOpen } = useContext(AppContext);
 
-  const handleScrollUp = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
+  const { handleNavModal } = navModalGsap(navOpen, setNavOpen);
 
-  useEffect(() => {
-    AOS.init();
-    window.addEventListener("scroll", handleVisibleButton);
-  }, [])
   
   return (
     <>
-      <div ref={refScrollUp}> </div>
+      <div ref={ refScrollUp }></div>
       <div className={`bg-layer ${navOpen ? 'bg-layer-active' : ''}`}></div>
-      <NavModal handleNavModal={ handleNavModal } setState={ navOpen } />
-      <Header handleNavModal={ handleNavModal } setState={ navOpen } />
+      <NavModal handleNavModal={ handleNavModal } />
+      <Header handleNavModal={ handleNavModal } />
       <main>
-        <Hero />
-        <About />
-        <Projects />
-        <Contact />
+        <AppRouter />
       </main>
+      <Contact />
       <Footer />
       <ScrollTopBtn 
-        showScrollTopBtn={`scroll-top ${showScrollTopBtn ? 'scroll-top-visible' : 'scroll-top-hidden'}`} 
-        scrollUp={ handleScrollUp }/>
+        customClass={`scroll-top ${showScrollTopBtn ? 'scroll-top-visible' : 'scroll-top-hidden'}`}
+      />
     </>
   )
 }

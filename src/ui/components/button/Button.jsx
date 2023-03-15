@@ -1,5 +1,5 @@
 
-const Button = ({ customFunction, customClass, text, link }) => {
+export const Button = ({ customFunction, customClass, text, link }) => {
   return (
     <button 
       type="button"
@@ -11,4 +11,3 @@ const Button = ({ customFunction, customClass, text, link }) => {
   )
 }
 
-export default Button

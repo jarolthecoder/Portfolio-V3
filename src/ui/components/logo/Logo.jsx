@@ -1,8 +1,8 @@
-import logoLight from '../assets/jr-logo-light.webp'
-import '../styles/components/Logo.css'
+import logoLight from '../../../assets/jr-logo-light.webp'
+import './Logo.css'
 
 
-const Logo = () => {
+export const Logo = () => {
 
   return (
     <div className="logo-container col-left">
@@ -14,4 +14,3 @@ const Logo = () => {
   )
 }
 
-export default Logo

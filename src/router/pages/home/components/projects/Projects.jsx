@@ -1,8 +1,8 @@
-import ProjectsList from '../components/ProjectsList';
-import Button from '../components/Button';
-import '../styles/layout/Projects.css'
+import ProjectsList from './ProjectsList';
+import { Button } from '../../../../../ui';
+import './Projects.css'
 
-const Projects = () => {
+export const Projects = () => {
 
   return (
     <section id='work' className='projects'>
@@ -25,4 +25,3 @@ const Projects = () => {
   )
 }
 
-export default Projects

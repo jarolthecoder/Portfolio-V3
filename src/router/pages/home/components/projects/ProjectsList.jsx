@@ -1,12 +1,12 @@
-import '../styles/components/ProjectsList.css'
+import { useRef, useEffect } from 'react';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import projectsData from '../helpers/projectsData';
-import AOSElement from '../components/AOSElement';
+import projectsData from '../../../../../helpers/projectsData';
+import { AOSElement } from '../../../../../ui';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useRef, useEffect } from 'react';
+import './ProjectsList.css'
 
 
 /* Icons */

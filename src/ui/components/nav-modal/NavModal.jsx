@@ -1,8 +1,8 @@
-import SocialMedia from '../components/SocialMedia';
+import { SocialMedia } from '../socialmedia/SocialMedia';
 import { Link, animateScroll as scroll } from "react-scroll";
-import '../styles/components/NavModal.css'
+import './NavModal.css'
 
-const NavModal = ({ handleNavModal }) => {
+export const NavModal = ({ handleNavModal }) => {
 
   const links = [
     {name: 'about', url: '/about'},
@@ -53,4 +53,3 @@ const NavModal = ({ handleNavModal }) => {
   )
 }
 
-export default NavModal

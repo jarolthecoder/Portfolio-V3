@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react';
 import { Link, animateScroll as scroll } from "react-scroll";
-import '../styles/components/NavBar.css';
+import './NavBar.css';
 
-const NavBar = ({ setState }) => {
+export const NavBar = ({ navOpen }) => {
+
 	const navLink = [
 		{name: 'work', url:'/work'},
 		{name: 'contact', url:'/#contact'}
@@ -21,7 +22,7 @@ const NavBar = ({ setState }) => {
     <nav id="top-navbar">
 			<ul 
 				className='navigation flex-control'
-				style={{display: setState ? 'none' : 'flex'}}>
+				style={{display: navOpen ? 'none' : 'flex'}}>
 				{navLink.map((item, index) => {
 					return(
 						<li className="nav-item flex-control" key={ index }>
@@ -43,5 +44,3 @@ const NavBar = ({ setState }) => {
     </nav>
   )
 }
-
-export default NavBar

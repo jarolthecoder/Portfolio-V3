@@ -1,12 +1,11 @@
 import { useEffect, useState } from 'react';
 import { Link, animateScroll as scroll } from "react-scroll";
-import AOSElement from '../components/AOSElement';
-import backgroundImg from '../assets/peter-olexa-Q5GnQxjX7Jk-unsplash-PhotoRoom.png-PhotoRoom.webp'
-import '../styles/layout/Hero.css'
-import 'aos/dist/aos.css';
+import { AOSElement } from '../../../../../ui';
+import backgroundImg from '../../../../../assets/peter-olexa-Q5GnQxjX7Jk-unsplash-PhotoRoom.png-PhotoRoom.webp'
+import './Hero.css'
 
 
-const Hero = () => {
+export const Hero = () => {
 
   const [loaded, setLoaded] = useState(false);
   const [scrollY, setScrollY] = useState(0);
@@ -74,5 +73,3 @@ const Hero = () => {
     </>
   )
 }
-
-export default Hero

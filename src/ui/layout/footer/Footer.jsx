@@ -1,8 +1,7 @@
-import '../styles/layout/Footer.css'
-import Logo from '../components/Logo.jsx'
-import AOSElement from '../components/AOSElement';
+import './Footer.css'
+import { AOSElement, Logo } from '../../components';
 
-const Footer = () => {
+export const Footer = () => {
   return (
     <footer id="main-footer">
       <AOSElement duration="900">
@@ -20,5 +19,3 @@ const Footer = () => {
     </footer>
   )
 }
-
-export default Footer

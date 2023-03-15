@@ -1,12 +1,10 @@
-import '../styles/layout/Contact.css'
-import dotsBg from '../assets/dots-bg.svg'
-import helloImg from '../assets/hand-hello.svg'
-import SocialMedia from '../components/SocialMedia';
-import Button from '../components/Button';
-import AOSElement from '../components/AOSElement';
+import { AOSElement, Button, SocialMedia } from '../../components';
+import dotsBg from '../../../assets/dots-bg.svg'
+import helloImg from '../../../assets/hand-hello.svg'
+import './Contact.css'
 
 
-const Contact = () => {
+export const Contact = () => {
   
   return (
     <div id='contact'>
@@ -61,5 +59,3 @@ const Contact = () => {
     </div>
   )
 }
-
-export default Contact
