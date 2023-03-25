@@ -35,8 +35,8 @@ export const Hero = () => {
             </AOSElement>
             <AOSElement duration="900" delay="200">
               <p className="lead">
-                I am a goal-driven Front End web developer passionate 
-                about bringing digital experiences to life. 
+                I specialize in creating dynamic and empowering digital experiences
+                for the web. 
               </p>
             </AOSElement>
 					</div>

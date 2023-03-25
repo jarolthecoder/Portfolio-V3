@@ -29,23 +29,22 @@ export const About = () => {
           </AOSElement>
           <div className="text-content">
             <AOSElement duration="900">
+              <p>
+                I am a self-taught Front End Web Developer passionate about utilizing 
+                my skills and expertise to create technology and solutions that deliver value
+                and empowers individuals to achieve their goals.
+              </p>
+            </AOSElement>
+            <AOSElement duration="900">
               <p> 
-                My journey as a self-taught developer began in 2020 and since then, 
-                I have been assisting local business owners by creating 
+                Since 2021 I have been assisting local business owners by creating 
                 visually appealing, accessible & performant websites for their businesses, 
                 providing them with a stronger online presence that will help their 
                 overall success. 
               </p>
             </AOSElement>
-            <AOSElement duration="900">
-              <p>
-                I find immense satisfaction in utilizing my skills and expertise to create
-                technology that empowers individuals to achieve their goals.
-              </p>
-            </AOSElement>
              <AOSElement duration="900">
               <p>
-                I'm currently open for any freelance or hire opportunities. 
                 Here is the stack of technologies I work with:
               </p>
             </AOSElement>

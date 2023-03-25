@@ -37,7 +37,7 @@ export const NavModal = ({ handleNavModal }) => {
           })
           }
           <li className={`modal-link modal-item`}>
-            <a href="../assets/resume-jarol-riera2023.pdf" target="_blank">
+            <a href="../assets/resumeJarolRiera23.pdf" target="_blank">
               <span className="link" onClick={ handleNavModal }>
                 Resume
               </span>
