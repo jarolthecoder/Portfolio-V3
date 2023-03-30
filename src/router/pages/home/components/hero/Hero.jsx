@@ -35,7 +35,7 @@ export const Hero = () => {
             </AOSElement>
             <AOSElement duration="900" delay="200">
               <p className="lead">
-                I specialize in creating dynamic and empowering digital experiences
+                I specialize in creating smart and dynamic digital experiences
                 for the web. 
               </p>
             </AOSElement>
