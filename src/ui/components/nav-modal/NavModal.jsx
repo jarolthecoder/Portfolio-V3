@@ -21,7 +21,8 @@ export const NavModal = ({ handleNavModal }) => {
             return (
               <li 
                 className={`modal-link modal-item`}
-                key={ index }>
+                key={ index }
+              >
                 <Link
                   to={item.name}
                   spy={true}

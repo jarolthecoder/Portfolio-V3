@@ -15,7 +15,6 @@ export const App = () => {
 
   const { handleNavModal } = navModalGsap(navOpen, setNavOpen);
 
-  
   return (
     <>
       <div ref={ refScrollUp }></div>

@@ -13,7 +13,7 @@ export const SocialMedia = () => {
   const socialLinks = [
     {title:'GitHub', name: gitHub, url: 'https://github.com/jarolthecoder'},
     {title:'LinkedIn', name: linkedIn, url: 'https://www.linkedin.com/in/jarol-riera/'},
-    {title:'Instagram', name: instagram, url: 'https://www.instagram.com/jarolriera/'}
+    // {title:'Instagram', name: instagram, url: 'https://www.instagram.com/jarolriera/'}
   ]
 
   return (
