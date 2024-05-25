@@ -12,9 +12,9 @@ const projectsData = [
     img: taskmanagerImg,
     description:
       "TaskManager is a user-friendly and intuitive dashboard that allows users to stay organized and manage their daily tasks with ease.",
-    technologies: "React / Vite / Animate.css",
-    repo_link: "https://github.com/jarolthecoder/TaskManagerApp",
-    url: "https://thetaskmanager.netlify.app/",
+    technologies: "Next.js 14 / Redux / Firebase",
+    repo_link: "https://github.com/jarolthecoder/TaskManager-V2",
+    url: "https://thetaskmanager.vercel.app/",
   },
   {
     name: "Koffee",

@@ -7,8 +7,6 @@ import { AppRouter } from './router/AppRouter'
 import 'aos/dist/aos.css';
 import './App.css'
 
-
-
 export const App = () => {
 
   const { showScrollTopBtn, refScrollUp, navOpen, setNavOpen } = useContext(AppContext);
