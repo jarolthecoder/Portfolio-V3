@@ -12,7 +12,7 @@ export const Footer = () => {
             </a>
           </div>
           <p className="copyright">
-            ©2023 Made by <a href="https://jarolriera.com/">Jarol Riera</a>.
+            &copy; 2024 Made by <a href="https://jarolriera.com/">Jarol Riera</a>.
           </p>
         </div>
       </AOSElement>
